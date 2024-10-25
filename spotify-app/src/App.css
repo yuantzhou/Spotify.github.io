@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+/*https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_blog&stacked=h
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+ .row.content {height: 1150px}
+    
+ /* Set gray background color and 100% height */
+ .sidenav {
+   background-color: #f1f1f1;
+   height: 100%;
+ }
+ 
+ /* Set black background color, white text and some padding */
+ footer {
+   background-color: #555;
+   color: white;
+   padding: 15px;
+ }
+ .logout{
+   position: fixed;
+   bottom:20px;
+   right:0;
+   width: 100px;
+   height: 50px;
+   font-weight: bold;
+   font-size: large;
+   z-index: 1;
+ }
+ .login{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+ }
+ img {
+   padding:20px;
+ }
+ .allTracks{
+   height: 300px;
+   overflow-y: scroll;
+   background-color: #f1f1f1;
+   font-size: medium;
+   margin-top: 30px;
+ }
+ .playLists{
+   height: 400px;
+   overflow-y: auto;
+   list-style: none;
+ }
+ .normal{
+   font-size: large;
+   font-weight: 500;
+   margin-bottom: 15px;
+   border-style: none;
+ }
+ .btn-success{
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 15px;
+  border-style: none;
+ }
+ h2{
+   text-align: center;
+   font-size: xx-large;
+ }
+ h4{
+   font-weight: 400;
+   text-align: center;
+ }
+ .btns{
+   display: flex;
+   justify-content: space-around;
+   font-size: large;
+   height: 50px;
+ }
+ .btn-primary{
+  font-size: large;
+  width: 150px;
+  height: 50px;
+ }
+ .fun{
+  width: 150px;
+ }
+ .preview{
+   height: 300px;
+   overflow-y: scroll;
+   background-color: #f1f1f1;
+   font-size: medium;
+ }
+ .filterForm{
+   margin-top: 30px;
+   font-weight: 600;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 17px;
+ }
+ .desHeader{
+   font-size: larger;
+ }
+ .description{
+  float: right;
+  margin-right: 100px;
+  font-style: italic;
+ }
+
+ .featureCell{
+   display: flex;
+   font-family: 'Times New Roman', Times, serif;
+
+ }
+ .featureCellHeader{
+   display: flex;
+   margin-top: 20px;
+ }
+ .pName{
+   width: 500px;
+   font-size: 20px;
+ }
+ .pNameHeader{
+  width: 500px;
+}
+.pDetailHeader{
+  width: 200px;
+  float: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .pDetail{
+   width: 200px;
+   float: right;
+   font-style: italic;
+ }
+ .fadeout {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+ margin-left: 350px;
+  animation: fadeOut ease 5s;
+  animation-fill-mode: forwards;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.generate{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+ margin-left: 350px;
+ margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  background-color: #04AA6D;
+  border: none;
   color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: -150px;
+  text-decoration: none;
+  width: 300px;
+  border-radius: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+ /* On small screens, set height to 'auto' for sidenav and grid */
+ @media screen and (max-width: 767px) {
+   .sidenav {
+     height: auto;
+     padding: 15px;
+   }
+   .row.content {height: auto;} 
+ }
+ .pointerLeft{
+   width: 300px;
+   height: 300px;
+  align-items: center;
+  display: flex;
+  font-size: larger;
+  font-weight: 800;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* Spacing */
+  padding: 8px;
+ }
+
+ .pointerLeftArrow {
+  /* Center the content */
+  
+  background-color: transparent;
+
+  /* Size */
+  height: 12px;
+  width: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  transform: translateX(25%) rotate(45deg);
 }

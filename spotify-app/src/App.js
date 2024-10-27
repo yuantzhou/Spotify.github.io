@@ -6,7 +6,7 @@ import axios from 'axios';
 function App() {
     const CLIENT_ID = "a727d682cb234036b94074e2eff5b8ee"
     const CLIENT_SECRECT = "cfecc1a4e33c4f4790159e46737a2c4a"
-    const REDIRECT_URI = "http://localhost:3000"
+    const REDIRECT_URI = "https://yuantzhou.github.io/Spotify.github.io/"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const scope = 'user-read-private user-read-email playlist-modify-public playlist-modify-private user-top-read';
